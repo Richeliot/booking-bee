@@ -1,0 +1,13 @@
+
+@use '@angular/material' as mat;
+
+@include mat.core();
+$my-typography: mat.define-typography-config();
+@include mat.typography-hierarchy($my-typography);
+
+:root {
+  @include mat.all-component-themes($booking-theme);
+}
+
+// For more information: https://material.angular.io/guide/typography#using-typography-styles-in-your-application.
+@include mat.typography-hierarchy($booking-theme);
